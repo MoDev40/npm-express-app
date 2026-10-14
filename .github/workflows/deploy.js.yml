@@ -1,0 +1,14 @@
+
+name: Run Deployment Script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Execute script
+        run: /home/ubuntu/scripts/npm-express-app-deploy.sh
