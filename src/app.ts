@@ -9,8 +9,8 @@ app.get('/', (_req:Request, res:Response) => {
   return res.json({
     message: 'Hello World',
     data:{
-      items:[1,2,3,4,5],
-      total:5,
+      items:[1,2,3,4,5,6],
+      total:6,
       page:1,
       totalPages:2
     },
